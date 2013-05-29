@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39114F101756481F00D1F6EF /* shortcuts.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39114F0F1756481F00D1F6EF /* shortcuts.txt */; };
 		3969BBC11755DA5500A0219D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3969BBBF1755DA5500A0219D /* InfoPlist.strings */; };
 		3969BBC31755DA5500A0219D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3969BBC21755DA5500A0219D /* main.m */; };
 		3969BBC71755DA5500A0219D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3969BBC51755DA5500A0219D /* Credits.rtf */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39114F0F1756481F00D1F6EF /* shortcuts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shortcuts.txt; sourceTree = "<group>"; };
 		3969BBB31755DA5500A0219D /* Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3969BBB61755DA5500A0219D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3969BBBE1755DA5500A0219D /* Shortcuts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shortcuts-Info.plist"; sourceTree = "<group>"; };
@@ -43,9 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39114F11175648A200D1F6EF /* res */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
 		3969BBAA1755DA5500A0219D = {
 			isa = PBXGroup;
 			children = (
+				39114F11175648A200D1F6EF /* res */,
 				3969BBBC1755DA5500A0219D /* Shortcuts */,
 				3969BBB51755DA5500A0219D /* Frameworks */,
 				3969BBB41755DA5500A0219D /* Products */,
@@ -77,6 +87,7 @@
 				3969BBBD1755DA5500A0219D /* Supporting Files */,
 				3969BBD31755EFCB00A0219D /* DDFileReader.h */,
 				3969BBD41755EFCB00A0219D /* DDFileReader.m */,
+				39114F0F1756481F00D1F6EF /* shortcuts.txt */,
 			);
 			path = Shortcuts;
 			sourceTree = "<group>";
@@ -148,6 +159,7 @@
 				3969BBC11755DA5500A0219D /* InfoPlist.strings in Resources */,
 				3969BBC71755DA5500A0219D /* Credits.rtf in Resources */,
 				3969BBCD1755DA5600A0219D /* MainMenu.xib in Resources */,
+				39114F101756481F00D1F6EF /* shortcuts.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

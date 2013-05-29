@@ -58,7 +58,7 @@
              return nil;
         }
         
-        lineDelimiter = [[NSString alloc] initWithString:@"\n"];
+        lineDelimiter = @"\n";
         filePath = aPath;
         currentOffset = 0ULL;
         chunkSize = 10;
