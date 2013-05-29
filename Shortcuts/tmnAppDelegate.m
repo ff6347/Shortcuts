@@ -10,6 +10,7 @@
 #import "DDFileReader.h"
 
 @implementation tmnAppDelegate
+
 @synthesize statusBar = _statusBar;
 - (void) awakeFromNib {
     

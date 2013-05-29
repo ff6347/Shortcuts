@@ -10,9 +10,9 @@
 
 @interface tmnAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSWindow *window;
 
-@property (weak) IBOutlet NSMenu *ShortcutsMenu;
+@property  (weak) IBOutlet NSMenu *ShortcutsMenu;
 
 @property (strong, nonatomic) NSStatusItem *statusBar;
 
