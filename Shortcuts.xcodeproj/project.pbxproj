@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3969BBB71755DA5500A0219D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3969BBB61755DA5500A0219D /* Cocoa.framework */; };
+		3969BBC11755DA5500A0219D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3969BBBF1755DA5500A0219D /* InfoPlist.strings */; };
+		3969BBC31755DA5500A0219D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3969BBC21755DA5500A0219D /* main.m */; };
+		3969BBC71755DA5500A0219D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3969BBC51755DA5500A0219D /* Credits.rtf */; };
+		3969BBCA1755DA5500A0219D /* tmnAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3969BBC91755DA5500A0219D /* tmnAppDelegate.m */; };
+		3969BBCD1755DA5600A0219D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3969BBCB1755DA5600A0219D /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3969BBB31755DA5500A0219D /* Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3969BBB61755DA5500A0219D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3969BBB91755DA5500A0219D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3969BBBA1755DA5500A0219D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3969BBBB1755DA5500A0219D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3969BBBE1755DA5500A0219D /* Shortcuts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shortcuts-Info.plist"; sourceTree = "<group>"; };
+		3969BBC01755DA5500A0219D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3969BBC21755DA5500A0219D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3969BBC41755DA5500A0219D /* Shortcuts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shortcuts-Prefix.pch"; sourceTree = "<group>"; };
+		3969BBC61755DA5500A0219D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3969BBC81755DA5500A0219D /* tmnAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmnAppDelegate.h; sourceTree = "<group>"; };
+		3969BBC91755DA5500A0219D /* tmnAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmnAppDelegate.m; sourceTree = "<group>"; };
+		3969BBCC1755DA5600A0219D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3969BBB01755DA5500A0219D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3969BBB71755DA5500A0219D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3969BBAA1755DA5500A0219D = {
+			isa = PBXGroup;
+			children = (
+				3969BBBC1755DA5500A0219D /* Shortcuts */,
+				3969BBB51755DA5500A0219D /* Frameworks */,
+				3969BBB41755DA5500A0219D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3969BBB41755DA5500A0219D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3969BBB31755DA5500A0219D /* Shortcuts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3969BBB51755DA5500A0219D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3969BBB61755DA5500A0219D /* Cocoa.framework */,
+				3969BBB81755DA5500A0219D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3969BBB81755DA5500A0219D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3969BBB91755DA5500A0219D /* AppKit.framework */,
+				3969BBBA1755DA5500A0219D /* CoreData.framework */,
+				3969BBBB1755DA5500A0219D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3969BBBC1755DA5500A0219D /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				3969BBC81755DA5500A0219D /* tmnAppDelegate.h */,
+				3969BBC91755DA5500A0219D /* tmnAppDelegate.m */,
+				3969BBCB1755DA5600A0219D /* MainMenu.xib */,
+				3969BBBD1755DA5500A0219D /* Supporting Files */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		3969BBBD1755DA5500A0219D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3969BBBE1755DA5500A0219D /* Shortcuts-Info.plist */,
+				3969BBBF1755DA5500A0219D /* InfoPlist.strings */,
+				3969BBC21755DA5500A0219D /* main.m */,
+				3969BBC41755DA5500A0219D /* Shortcuts-Prefix.pch */,
+				3969BBC51755DA5500A0219D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3969BBB21755DA5500A0219D /* Shortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3969BBD01755DA5600A0219D /* Build configuration list for PBXNativeTarget "Shortcuts" */;
+			buildPhases = (
+				3969BBAF1755DA5500A0219D /* Sources */,
+				3969BBB01755DA5500A0219D /* Frameworks */,
+				3969BBB11755DA5500A0219D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shortcuts;
+			productName = Shortcuts;
+			productReference = 3969BBB31755DA5500A0219D /* Shortcuts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3969BBAB1755DA5500A0219D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = tmn;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "the-moron.net";
+			};
+			buildConfigurationList = 3969BBAE1755DA5500A0219D /* Build configuration list for PBXProject "Shortcuts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3969BBAA1755DA5500A0219D;
+			productRefGroup = 3969BBB41755DA5500A0219D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3969BBB21755DA5500A0219D /* Shortcuts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3969BBB11755DA5500A0219D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3969BBC11755DA5500A0219D /* InfoPlist.strings in Resources */,
+				3969BBC71755DA5500A0219D /* Credits.rtf in Resources */,
+				3969BBCD1755DA5600A0219D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3969BBAF1755DA5500A0219D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3969BBC31755DA5500A0219D /* main.m in Sources */,
+				3969BBCA1755DA5500A0219D /* tmnAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3969BBBF1755DA5500A0219D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3969BBC01755DA5500A0219D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3969BBC51755DA5500A0219D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3969BBC61755DA5500A0219D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3969BBCB1755DA5600A0219D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3969BBCC1755DA5600A0219D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3969BBCE1755DA5600A0219D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3969BBCF1755DA5600A0219D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3969BBD11755DA5600A0219D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shortcuts/Shortcuts-Prefix.pch";
+				INFOPLIST_FILE = "Shortcuts/Shortcuts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3969BBD21755DA5600A0219D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shortcuts/Shortcuts-Prefix.pch";
+				INFOPLIST_FILE = "Shortcuts/Shortcuts-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3969BBAE1755DA5500A0219D /* Build configuration list for PBXProject "Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3969BBCE1755DA5600A0219D /* Debug */,
+				3969BBCF1755DA5600A0219D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3969BBD01755DA5600A0219D /* Build configuration list for PBXNativeTarget "Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3969BBD11755DA5600A0219D /* Debug */,
+				3969BBD21755DA5600A0219D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3969BBAB1755DA5500A0219D /* Project object */;
+}
