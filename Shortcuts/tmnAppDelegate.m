@@ -8,12 +8,13 @@
 
 #import "tmnAppDelegate.h"
 #import "DDFileReader.h"
-
+#import "GlobalValues.h"
 @implementation tmnAppDelegate
 
 @synthesize statusBar = _statusBar;
 - (void) awakeFromNib {
-    
+//    GlobalValues *values = [GlobalValues sharedManager];
+
     NSFileManager* fileManager = [NSFileManager defaultManager];
     NSURL* appSupportDir = nil;
     
@@ -33,7 +34,6 @@
     NSLog(@"userpath %@",userpath);
     userpath = [userpath stringByAppendingPathComponent:executableName];    // The file will go in this directory
     NSString *shortcutsFilePath = [userpath stringByAppendingPathComponent:@"shortcuts.txt"];
-//    NSFileManager *fileManager = [[NSFileManager alloc] init];
     if ([fileManager fileExistsAtPath:userpath] == NO){
         NSLog(@"I'm in the user path does not exist");
         [fileManager createDirectoryAtPath:userpath withIntermediateDirectories:YES attributes:nil error:nil];
@@ -44,6 +44,8 @@
         [fileManager copyItemAtPath:[thisBundle pathForResource:@"shortcuts" ofType:@"txt"] toPath:shortcutsFilePath error:NULL];
     }
     
+    [GlobalValues sharedManager].FULLFILEPATH = shortcutsFilePath;
+//    values.FULLFILEPATH = shortcutsFilePath;
     
     /***
      * This looks into the users application supprt folder
@@ -80,7 +82,7 @@
     NSMutableArray *list;
     list = [NSMutableArray arrayWithObjects:  nil];
     
-    NSString * path = @"/Users/fabiantheblind/Desktop/test/shortcuts.txt";
+//    NSString * path = @"/Users/fabiantheblind/Desktop/test/shortcuts.txt";
     DDFileReader * reader = [[DDFileReader alloc] initWithFilePath:shortcutsFilePath];
     NSString * line = nil;
 
