@@ -12,9 +12,51 @@
 @implementation tmnAppDelegate
 
 @synthesize statusBar = _statusBar;
-- (void) awakeFromNib {
-//    GlobalValues *values = [GlobalValues sharedManager];
 
+- (void)setTitlesFromList{
+    /***
+     * This is taken from the
+     * https://github.com/fabiantheblind/StatusBarApp
+     */
+    
+    //    self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    //
+    //    self.statusBar.title = @"SC";
+    //
+    //    // you can also set an image
+    //    //self.statusBar.image =
+    //
+    //    self.statusBar.menu = self.ShortcutsMenu;
+    //    self.statusBar.highlightMode = YES;
+    
+    NSMutableArray *list;
+    list = [NSMutableArray arrayWithObjects:  nil];
+    
+    //    NSString * path = @"/Users/fabiantheblind/Desktop/test/shortcuts.txt";
+    DDFileReader * reader = [[DDFileReader alloc] initWithFilePath:[GlobalValues sharedManager].FULLFILEPATH];
+    NSString * line = nil;
+    
+    
+    while ((line = [reader readLine])) {
+        NSLog(@"read line: %@", line);
+        [list addObject:line];
+    }
+    
+    for (int i = 0; i < [list count]; i++){
+        NSMenuItem *newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:[list objectAtIndex: i]
+                                                                                   action:@selector(aboutDockAction:)
+                               
+                                                                            keyEquivalent:@""];
+        
+        [newItem setTarget: self];
+        [newItem setEnabled:YES];
+        [_ShortcutsMenu addItem:newItem];
+    }
+}
+
+- (void) awakeFromNib {
+
+    
     NSFileManager* fileManager = [NSFileManager defaultManager];
     NSURL* appSupportDir = nil;
     
@@ -64,11 +106,11 @@
     }
     
     
-    /***
-     * This is taken from the 
-     * https://github.com/fabiantheblind/StatusBarApp
-     */
-    
+//    /***
+//     * This is taken from the 
+//     * https://github.com/fabiantheblind/StatusBarApp
+//     */
+//    
     self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     
     self.statusBar.title = @"SC";
@@ -78,7 +120,7 @@
     
     self.statusBar.menu = self.ShortcutsMenu;
     self.statusBar.highlightMode = YES;
-    
+
     NSMutableArray *list;
     list = [NSMutableArray arrayWithObjects:  nil];
     
@@ -106,9 +148,86 @@
     
 }
 
+- (void)menuNeedsUpdate:(NSMenu *)menu {
+    NSLog(@"menuNeedsUpdate was called");
+    
+//    menu
+//    if (menu == self.statusBar.menu) {
+//        
+//
+//    self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+//    
+//    self.statusBar.title = @"SC";
+//    
+//    // you can also set an image
+//    //self.statusBar.image =
+//    
+//    self.statusBar.menu = self.ShortcutsMenu;
+//    self.statusBar.highlightMode = YES;
+//    
+//    NSMutableArray *list;
+//    list = [NSMutableArray arrayWithObjects:  nil];
+//    
+//    //    NSString * path = @"/Users/fabiantheblind/Desktop/test/shortcuts.txt";
+//    DDFileReader * reader = [[DDFileReader alloc] initWithFilePath: [GlobalValues sharedManager].FULLFILEPATH];
+//    NSString * line = nil;
+//    
+//    
+//    while ((line = [reader readLine])) {
+//        NSLog(@"read line: %@", line);
+//        [list addObject:line];
+//    }
+//    
+//    for (int i = 0; i < [list count]; i++){
+//        NSMenuItem *newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:[list objectAtIndex: i]
+//                                                                                   action:@selector(aboutDockAction:)
+//                               
+//                                                                            keyEquivalent:@""];
+//        
+//        [newItem setTarget: self];
+//        [newItem setEnabled:YES];
+//        [menu addItem:newItem];
+//    }
+//    }
+NSLog(@"end menuNeedsUpdate");
+}
+- (void)updateTheMenu {
+
+    
+//    self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+//    self.statusBar.menu = self.ShortcutsMenu;
+//    NSMenuItem *first = [_ShortcutsMenu itemAtIndex:1];
+//    NSAttributedString * string1 = [[NSAttributedString alloc] initWithString:@"hello"];
+//    NSAttributedString * string2 = [[NSAttributedString alloc] initWithString:@"world"];
+//    
+//    static BOOL flip = NO;
+////    NSMenu *filemenu = [[[NSApp mainMenu] itemAtIndex:1] submenu];
+//    if (flip) {
+//        [first setAttributedTitle:string1];
+//    } else {
+//        [first setAttributedTitle:string2];
+//    }
+//    flip = !flip;
+}
+
+- (void)menuWillOpen:(NSMenu *)menu{
+
+    if(menu == _ShortcutsMenu){
+}
+
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
+    
     // Insert code here to initialize your application
+//    NSTimer *timer = [NSTimer timerWithTimeInterval:0.5
+//                                             target:self
+//                                           selector:@selector(menuNeedsUpdate)
+//                                           userInfo:nil
+//                                            repeats:YES];
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }
+
+
 
 @end

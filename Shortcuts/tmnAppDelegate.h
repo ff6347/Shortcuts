@@ -16,5 +16,6 @@
 
 @property (strong, nonatomic) NSStatusItem *statusBar;
 
+- (void)setTitlesFromList;
 
 @end
