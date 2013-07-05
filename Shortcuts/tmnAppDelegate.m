@@ -74,6 +74,7 @@
     self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     
     self.statusBar.title = @"SC";
+//    [[self.statusBar menu] setDelegate:self];
     
     // you can also set an image
     //self.statusBar.image =
@@ -104,16 +105,20 @@
         [newItem setEnabled:YES];
         [_ShortcutsMenu addItem:newItem];
     }
-
+    
     
 }
+
+#pragma NSMenu delegate methods
 
 - (void)menuNeedsUpdate:(NSMenu *)menu {
     NSLog(@"menuNeedsUpdate was called");
     
-//    menu
-//    if (menu == self.statusBar.menu) {
-//        
+    //    menu
+    if (menu == self.statusBar.menu) {
+        NSLog(@"in update");
+    }
+        //
 //
 //    self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
 //    
@@ -172,7 +177,8 @@ NSLog(@"end menuNeedsUpdate");
 
 - (void)menuWillOpen:(NSMenu *)menu{
 
-    if(menu == _ShortcutsMenu){
+    if(menu == self.statusBar.menu){
+        NSLog(@"in menu will open");
 }
 
 }

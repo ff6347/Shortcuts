@@ -19,13 +19,26 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Shortcuts/tmnAppDelegate.m"
-         timestampString = "394715411.875704"
+         timestampString = "394726477.567618"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "122"
-         endingLineNumber = "122"
+         startingLineNumber = "83"
+         endingLineNumber = "83"
          landmarkName = "-awakeFromNib"
          landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Shortcuts/tmnAppDelegate.m"
+         timestampString = "394726477.567618"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "14"
+         endingLineNumber = "14"
+         landmarkName = "statusBar"
+         landmarkType = "19">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

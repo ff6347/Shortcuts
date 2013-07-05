@@ -14,8 +14,9 @@
 
 @property  (weak) IBOutlet NSMenu *ShortcutsMenu;
 
-@property (strong, nonatomic) NSStatusItem *statusBar;
+@property (nonatomic) NSStatusItem *statusBar;
 
-- (void)setTitlesFromList;
+- (void)menuNeedsUpdate:(NSMenu*)menu;
 
+- (void)menuWillOpen:(NSMenu *)menu;
 @end
