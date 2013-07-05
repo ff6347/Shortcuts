@@ -69,7 +69,7 @@
     
     self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     
-    self.statusBar.title = @"G";
+    self.statusBar.title = @"SC";
     
     // you can also set an image
     //self.statusBar.image =
@@ -78,7 +78,7 @@
     self.statusBar.highlightMode = YES;
     
     NSMutableArray *list;
-    list = [NSMutableArray arrayWithObjects: @"Red", @"Green", @"Blue", @"Yellow", nil];
+    list = [NSMutableArray arrayWithObjects:  nil];
     
     NSString * path = @"/Users/fabiantheblind/Desktop/test/shortcuts.txt";
     DDFileReader * reader = [[DDFileReader alloc] initWithFilePath:shortcutsFilePath];
