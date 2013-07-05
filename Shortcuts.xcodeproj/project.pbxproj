@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		39114F101756481F00D1F6EF /* shortcuts.txt in Resources */ = {isa = PBXBuildFile; fileRef = 39114F0F1756481F00D1F6EF /* shortcuts.txt */; };
+		3965B7391786AC7A001FEDA5 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3965B7381786AC7A001FEDA5 /* AppController.m */; };
+		3965B73D1786B30A001FEDA5 /* GlobalValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 3965B73C1786B30A001FEDA5 /* GlobalValues.m */; };
 		3969BBC11755DA5500A0219D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3969BBBF1755DA5500A0219D /* InfoPlist.strings */; };
 		3969BBC31755DA5500A0219D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3969BBC21755DA5500A0219D /* main.m */; };
 		3969BBC71755DA5500A0219D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3969BBC51755DA5500A0219D /* Credits.rtf */; };
@@ -19,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		39114F0F1756481F00D1F6EF /* shortcuts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shortcuts.txt; sourceTree = "<group>"; };
+		3965B7371786AC7A001FEDA5 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		3965B7381786AC7A001FEDA5 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		3965B73B1786B30A001FEDA5 /* GlobalValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalValues.h; path = ../GlobalValues.h; sourceTree = "<group>"; };
+		3965B73C1786B30A001FEDA5 /* GlobalValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GlobalValues.m; path = ../GlobalValues.m; sourceTree = "<group>"; };
 		3969BBB31755DA5500A0219D /* Shortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3969BBB61755DA5500A0219D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3969BBBE1755DA5500A0219D /* Shortcuts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shortcuts-Info.plist"; sourceTree = "<group>"; };
@@ -81,6 +87,8 @@
 		3969BBBC1755DA5500A0219D /* Shortcuts */ = {
 			isa = PBXGroup;
 			children = (
+				3965B73B1786B30A001FEDA5 /* GlobalValues.h */,
+				3965B73C1786B30A001FEDA5 /* GlobalValues.m */,
 				3969BBC81755DA5500A0219D /* tmnAppDelegate.h */,
 				3969BBC91755DA5500A0219D /* tmnAppDelegate.m */,
 				3969BBCB1755DA5600A0219D /* MainMenu.xib */,
@@ -88,6 +96,8 @@
 				3969BBD31755EFCB00A0219D /* DDFileReader.h */,
 				3969BBD41755EFCB00A0219D /* DDFileReader.m */,
 				39114F0F1756481F00D1F6EF /* shortcuts.txt */,
+				3965B7371786AC7A001FEDA5 /* AppController.h */,
+				3965B7381786AC7A001FEDA5 /* AppController.m */,
 			);
 			path = Shortcuts;
 			sourceTree = "<group>";
@@ -173,6 +183,8 @@
 				3969BBC31755DA5500A0219D /* main.m in Sources */,
 				3969BBCA1755DA5500A0219D /* tmnAppDelegate.m in Sources */,
 				3969BBDD1755F6D900A0219D /* DDFileReader.m in Sources */,
+				3965B7391786AC7A001FEDA5 /* AppController.m in Sources */,
+				3965B73D1786B30A001FEDA5 /* GlobalValues.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
