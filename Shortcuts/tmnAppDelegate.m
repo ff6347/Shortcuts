@@ -13,46 +13,6 @@
 
 @synthesize statusBar = _statusBar;
 
-- (void)setTitlesFromList{
-    /***
-     * This is taken from the
-     * https://github.com/fabiantheblind/StatusBarApp
-     */
-    
-    //    self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    //
-    //    self.statusBar.title = @"SC";
-    //
-    //    // you can also set an image
-    //    //self.statusBar.image =
-    //
-    //    self.statusBar.menu = self.ShortcutsMenu;
-    //    self.statusBar.highlightMode = YES;
-    
-    NSMutableArray *list;
-    list = [NSMutableArray arrayWithObjects:  nil];
-    
-    //    NSString * path = @"/Users/fabiantheblind/Desktop/test/shortcuts.txt";
-    DDFileReader * reader = [[DDFileReader alloc] initWithFilePath:[GlobalValues sharedManager].FULLFILEPATH];
-    NSString * line = nil;
-    
-    
-    while ((line = [reader readLine])) {
-        NSLog(@"read line: %@", line);
-        [list addObject:line];
-    }
-    
-    for (int i = 0; i < [list count]; i++){
-        NSMenuItem *newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:[list objectAtIndex: i]
-                                                                                   action:@selector(aboutDockAction:)
-                               
-                                                                            keyEquivalent:@""];
-        
-        [newItem setTarget: self];
-        [newItem setEnabled:YES];
-        [_ShortcutsMenu addItem:newItem];
-    }
-}
 
 - (void) awakeFromNib {
 
