@@ -8,13 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface tmnAppDelegate : NSObject <NSApplicationDelegate>
+@interface tmnAppDelegate : NSObject <NSApplicationDelegate>{
 
-@property (weak) IBOutlet NSWindow *window;
+}
 
-@property  (weak) IBOutlet NSMenu *ShortcutsMenu;
+@property (nonatomic, strong) IBOutlet NSWindow *window;
 
-@property (nonatomic) NSStatusItem *statusBar;
+@property  (nonatomic, strong) IBOutlet NSMenu *ShortcutsMenu;
+
+@property (nonatomic, strong) NSStatusItem *statusBar;
 
 - (void)menuNeedsUpdate:(NSMenu*)menu;
 
