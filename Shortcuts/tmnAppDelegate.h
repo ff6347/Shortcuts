@@ -8,17 +8,28 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface tmnAppDelegate : NSObject <NSApplicationDelegate>{
+@interface tmnAppDelegate : NSObject <NSApplicationDelegate, NSMenuDelegate>{
+    IBOutlet NSMenu *menu;
+    IBOutlet NSArrayController *arrayController;
 
+    NSStatusItem *statusItem;
+    NSString *shortcutsConfigFile;
+
+    // This is for the TXT File
+    NSDate *txtModified;
+    NSDate *txtConfigUser;
+    NSDate *txtConfigSystem;
+    
+    
 }
 
-@property (nonatomic, strong) IBOutlet NSWindow *window;
+//@property (nonatomic, strong) IBOutlet NSWindow *window;
+//
+//@property  (nonatomic, strong) IBOutlet NSMenu *ShortcutsMenu;
+//
+//@property (nonatomic, strong) NSStatusItem *statusBar;
 
-@property  (nonatomic, strong) IBOutlet NSMenu *ShortcutsMenu;
-
-@property (nonatomic, strong) NSStatusItem *statusBar;
-
-- (void)menuNeedsUpdate:(NSMenu*)menu;
+//- (void)menuNeedsUpdate:(NSMenu*)menu;
 
 - (void)menuWillOpen:(NSMenu *)menu;
 @end

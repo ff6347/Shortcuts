@@ -17,6 +17,9 @@
 		3969BBCD1755DA5600A0219D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3969BBCB1755DA5600A0219D /* MainMenu.xib */; };
 		3969BBD91755F50C00A0219D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3969BBB61755DA5500A0219D /* Cocoa.framework */; };
 		3969BBDD1755F6D900A0219D /* DDFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3969BBD41755EFCB00A0219D /* DDFileReader.m */; };
+		397C2DDE1794149F0069F8F0 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397C2DDD1794149F0069F8F0 /* AppKit.framework */; };
+		397C2DE0179414A70069F8F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397C2DDF179414A70069F8F0 /* CoreData.framework */; };
+		397C2DE2179414B00069F8F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397C2DE1179414B00069F8F0 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		3969BBCC1755DA5600A0219D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3969BBD31755EFCB00A0219D /* DDFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileReader.h; sourceTree = "<group>"; };
 		3969BBD41755EFCB00A0219D /* DDFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileReader.m; sourceTree = "<group>"; };
+		397C2DDD1794149F0069F8F0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		397C2DDF179414A70069F8F0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		397C2DE1179414B00069F8F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397C2DE2179414B00069F8F0 /* Foundation.framework in Frameworks */,
+				397C2DE0179414A70069F8F0 /* CoreData.framework in Frameworks */,
+				397C2DDE1794149F0069F8F0 /* AppKit.framework in Frameworks */,
 				3969BBD91755F50C00A0219D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +88,9 @@
 		3969BBB51755DA5500A0219D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				397C2DE1179414B00069F8F0 /* Foundation.framework */,
+				397C2DDF179414A70069F8F0 /* CoreData.framework */,
+				397C2DDD1794149F0069F8F0 /* AppKit.framework */,
 				3969BBB61755DA5500A0219D /* Cocoa.framework */,
 			);
 			name = Frameworks;
